@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<div class="content container-lg container-sm-fluid">
+<div class="content container-fluid container-lg">
     
     <div class="profile">
         <div class="row align-items-center">
@@ -45,7 +45,6 @@
         <a class="flex-sm-fill text-sm-center nav-link" href="#experience">Experience</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#projects">Projects</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#education">Education</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#hobbies">Hobbies</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="#contact">Contact</a>
     </nav>
 <!--
@@ -88,12 +87,13 @@
     <section id="recent-projects">
         <p class="section-title">Recent Projects</p>
 
-        <div id="slider" class="carousel slide">
+        <div id="slider" class="carousel slide mb-3">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            
             <div id="project-slides" class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="ratio ratio-21x9"> <!-- Use the ratio utility class for responsive embedding -->
@@ -122,16 +122,19 @@
         </div>
         
         <!-- This is the container for the buttons-->
-        <div class="d-flex flex-row mb-3">
-            <div class="pt-2">
-                <button type="button" class="btn button-class">Project Description</button>
+<!--
+        <div class="d-flex flex-lg-row mb-lg-3">
+-->
+        <div class="d-flex flex-column flex-lg-row">
+            <div class="me-lg-3 mb-3">
+                <button type="button" class="btn button-class w-100 h-100">Project Description</button>
             </div>
-            <div class="p-2">
-                <button type="button" class="btn button-class">GitHub</button>
+            <div class="me-lg-3 mb-3">
+                <button type="button" class="btn button-class w-100 h-100">GitHub</button>
             </div>
         </div>
     </section>
-
+    
     <section id="skills">
         <p class="section-title">Skills</p>
         <div class="container-lg container-sm-fluid">
@@ -199,7 +202,7 @@
     
     <section id="experience">
         <p class="section-title">Experience</p>
-        <div class="container">
+        <div class="container-lg container-sm-fluid">
             <div class="row">
                 <!-- Project 1-->
                 <div class="col-lg-3 text-start mb-lg-1 mb-auto item-block ps-2 pt-3">
@@ -228,7 +231,7 @@
 
     <section id="projects">
         <p class="section-title">Projects</p>
-        <div class="container">
+        <div class="container-lg container-sm-fluid">
         
             <div class="row">
                 <div class="col-lg-3 text-start mb-lg-1 mb-auto item-block ps-2 pt-3">
@@ -281,33 +284,6 @@
                 <img src="assets/images/edu-ico/uni.png" alt="staffs">
                 <h5 class="card-title">IBDP</h5>
                 <p class="card-text">GD Goenka World School, 2016 - 2020</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="hobbies">
-        <p class="section-title">Hobbies</p>
-
-        <div class="d-flex flex-row justify-content-evenly flex-wrap mb-3">
-            <div class="p-3 m-3 ms-0 hobby-cell rounded">
-                <img src="assets/images/hobby-ico/travelling.png" class="" alt="ue5">
-                <h4 class="fw-normal">Travelling</h4>
-            </div>
-            <div class="p-3 m-3 ms-0 hobby-cell rounded">
-                <img src="assets/images/hobby-ico/music.png" class="" alt="ue5">
-                <h4 class="fw-normal">Music</h4>
-            </div>
-            <div class="p-3 m-3 ms-0 hobby-cell rounded">
-                <img src="assets/images/hobby-ico/coding.png" class="" alt="ue5">
-                <h4 class="fw-normal">Coding</h4>
-            </div>
-            <div class="p-3 m-3 ms-0 hobby-cell rounded">
-                <img src="assets/images/hobby-ico/cooking.png" class="" alt="ue5">
-                <h4 class="fw-normal">Cooking</h4>
-            </div>
-            <div class="p-3 m-3 ms-0 hobby-cell rounded">
-                <img src="assets/images/hobby-ico/video-games.png" class="" alt="ue5">
-                <h4 class="fw-normal">Video Games</h4>
             </div>
         </div>
     </section>

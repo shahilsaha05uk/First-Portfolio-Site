@@ -1,3 +1,6 @@
+
+/* Generic Body Layout */
+
 body{
     background-color: #FFEAC5;
     
@@ -7,44 +10,6 @@ body{
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-
-}
-
-/* For the Profile Content */
-.profile{
-    margin-bottom: 100px;
-}
-
-.profile-pic{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    
-    border: 5px solid #603F26;
-    border-radius: 50%;
-}
-
-#name-title{
-    font-family: "Sacramento", serif;
-    font-size: 4.625rem;
-}
-
-#occupation-title{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
-}
-
-/* Generic Body Layout */
-.nav-fill{
-    background-color: #322213;
-   --bs-nav-pills-link-active-bg: #1c130b;
-   --bs-nav-link-hover-color: #ffe9ce;
-}
-
-.nav-link{
-    color: #FFDBB5;
-    font-size: 1.0rem;
-    
 }
 
 section{
@@ -63,6 +28,7 @@ section#contact{
     background-color: #FFDBB5;
     color: #603F26;
     font-weight: bold;
+    font-size: inherit;
 }
 
 section>.section-title{
@@ -89,6 +55,81 @@ section .item-block{
     background-color: #1c130b;
 }
 
+/* ==================== FONTS ============================= */
+
+/* Smartphones */
+@media (min-width: 576px) { /* sm breakpoint */
+    section>.section-title{
+        font-size: 2.8rem;
+    }
+    .content{
+        font-size: 2.1rem;
+    }
+}
+
+/* Small tablets */
+@media (min-width: 768px) { /* md breakpoint */
+
+}
+
+/* Big tablets */
+@media (min-width: 992px) { /* lg breakpoint */
+    section>.section-title{
+        font-size: 2rem;
+    }
+    .content{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Laptops and Monitors */
+@media (min-width: 1200px) { /* xl breakpoint */
+}
+
+/* TVs */
+@media (min-width: 1400px) { /* xxl breakpoint */
+
+}
+
+/* ================================================= */
+
+/* For the Profile Content */
+.profile{
+    margin-bottom: 100px;
+}
+
+.profile-pic{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    
+    border: 5px solid #603F26;
+    border-radius: 50%;
+}
+
+#name-title{
+    font-family: "Sacramento", serif;
+    font-size: 4.625rem;
+}
+
+#occupation-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Nav-bar */
+.nav-fill{
+    background-color: #322213;
+   --bs-nav-pills-link-active-bg: #1c130b;
+   --bs-nav-link-hover-color: #ffe9ce;
+}
+
+.nav-link{
+    color: #FFDBB5;
+    font-size: 1.2rem;
+}
+
 /* Project Section */
 #projects .list-group-item{
     background-color: #352515;
@@ -108,6 +149,7 @@ section .item-block{
     background-color: #fde8c3;
     color: #603f26;
 }
+
 /* Education Section */
 #education img{
     height: 50px;
