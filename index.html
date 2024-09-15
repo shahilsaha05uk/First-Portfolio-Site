@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<div class="content container">
+<div class="content container-lg container-sm-fluid">
     
     <div class="profile">
         <div class="row align-items-center">
@@ -37,7 +37,18 @@
             </div>
         </div>
     </div>
-    
+
+    <nav class="nav nav-pills flex-column flex-sm-row sticky-top nav-fill d-none d-lg-flex">
+        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#home">Home</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#recent-projects">Recent Work</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#skills">Skills</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#experience">Experience</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#projects">Projects</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#education">Education</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#hobbies">Hobbies</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#contact">Contact</a>
+    </nav>
+<!--
     <ul class="nav nav-pills nav-fill sticky-top">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -65,6 +76,8 @@
         </li>
     </ul>
 
+-->
+    
     <section id="home">
         <p class="section-title">About Me</p>
         <p class="text-start">I am a dedicated student enrolled in the final year of Staffordshire University's prestigious BSc (Hons) Game Development program. My journey into the world of game development began at the age of five when I discovered my love for gaming. This profound passion ignited a dream in me to transform my beloved hobby into a fulfilling career. It was this aspiration that fueled my decision to embark on this educational journey after successfully completing my 10th grade.
@@ -118,64 +131,72 @@
             </div>
         </div>
     </section>
-    
+
     <section id="skills">
         <p class="section-title">Skills</p>
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
-                
-                <!--Unreal Engine-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg"  class="bd-placeholder-img rounded-circle" alt="ue5">
-                    <h4 class="fw-normal">Unreal Engine</h4>
-                    
-                </div>
-                
-                <!--Unity-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"  class="bd-placeholder-img rounded-circle" alt="unity">
-                    <h4 class="fw-normal">Unity</h4>
-                    
+
+                <!-- Unreal Engine -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg"  class="bd-placeholder-img rounded-circle" alt="ue5">
+                        <h4 class="fw-normal">Unreal Engine</h4>
+                    </div>
                 </div>
 
-                <!--C#-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"  class="bd-placeholder-img rounded-circle" alt="c#">
-                    <h4 class="fw-normal">C#</h4>
-                    
+                <!-- Unity -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"  class="bd-placeholder-img rounded-circle" alt="unity">
+                        <h4 class="fw-normal">Unity</h4>
+                    </div>
                 </div>
 
-                <!--C++-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"  class="bd-placeholder-img rounded-circle" alt="c++">
-                    <h4 class="fw-normal">C++</h4>
-                    
+                <!-- C# -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"  class="bd-placeholder-img rounded-circle" alt="c#">
+                        <h4 class="fw-normal">C#</h4>
+                    </div>
                 </div>
 
-                <!--GitHub-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"  class="bd-placeholder-img rounded-circle" alt="github">
-                    <h4 class="fw-normal">GitHub</h4>
-                    
+                <!-- C++ -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"  class="bd-placeholder-img rounded-circle" alt="c++">
+                        <h4 class="fw-normal">C++</h4>
+                    </div>
                 </div>
 
-                <!--UML-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original-wordmark.svg"  class="bd-placeholder-img rounded-circle" alt="uml">
-                    <h4 class="fw-normal">UML</h4>
-                    
+                <!-- GitHub -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"  class="bd-placeholder-img rounded-circle" alt="github">
+                        <h4 class="fw-normal">GitHub</h4>
+                    </div>
                 </div>
-                
-                <!--Visual Studio-->
-                <div class="col-lg-2 col-md-4 col-sm-6 text-center mb-3 m-2 pt-3 skill-cell rounded">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"  class="bd-placeholder-img rounded-circle" alt="visual-studio">
-                    <h4 class="fw-normal">Visual Studio</h4>
+
+                <!-- UML -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original-wordmark.svg"  class="bd-placeholder-img rounded-circle" alt="uml">
+                        <h4 class="fw-normal">UML</h4>
+                    </div>
                 </div>
-                
+
+                <!-- Visual Studio -->
+                <div class="text-center p-1 col-md-6 col-lg-3">
+                    <div class="skill-cell rounded">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"  class="bd-placeholder-img rounded-circle" alt="visual-studio">
+                        <h4 class="fw-normal">Visual Studio</h4>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
+    
     <section id="experience">
         <p class="section-title">Experience</p>
         <div class="container">
