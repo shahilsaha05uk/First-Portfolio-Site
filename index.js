@@ -2,11 +2,11 @@
 var btnProjectDescriptionSlider = document.querySelector("#slider-projDescription-btn");
 var btnGithubSlider = document.querySelector("#slider-github-btn");
 const sliderMap = {
-    "goblin-siege-slide" : new ProjectDetails("https://www.youtube.com/embed/gWUMZekq5qI?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/GoblinSeige.git", "goblin-project"),
+    "goblin-siege-slide" : new ProjectDetails("https://www.youtube.com/embed/gWUMZekq5qI?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/GoblinSeige.git", "#"),
 
-    "strike-slide" : new ProjectDetails("https://www.youtube.com/embed/bxQbsuaC35c?si=psxg1fhxWueAv-Dl?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/Year4_Multiplayer_Project.git", "strike-project"),
+    "strike-slide" : new ProjectDetails("https://www.youtube.com/embed/bxQbsuaC35c?si=psxg1fhxWueAv-Dl?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/Year4_Multiplayer_Project.git", "#"),
 
-    "antinal-island-slide" : new ProjectDetails("https://www.youtube.com/embed/gWUMZekq5qI?si=gx3txK7j8ejkxDUV?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/AntinalIsland.git", "antinal-project")
+    "antinal-island-slide" : new ProjectDetails("https://www.youtube.com/embed/gWUMZekq5qI?si=gx3txK7j8ejkxDUV?enablejsapi=1&mute=1", "https://github.com/shahilsaha05uk/AntinalIsland.git", "#")
 }
 
 // This will be executed when the page loads
