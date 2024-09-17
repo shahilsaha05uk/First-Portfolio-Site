@@ -97,40 +97,39 @@
             <div id="project-slides" class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="ratio ratio-21x9"> <!-- Use the ratio utility class for responsive embedding -->
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/149KgAiF0Uc?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="goblin-siege-slide" class="embed-responsive-item" src="https://www.youtube.com/embed/149KgAiF0Uc?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="ratio ratio-21x9">
-                        <iframe src="https://www.youtube.com/embed/bxQbsuaC35c?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="strike-slide" src="https://www.youtube.com/embed/bxQbsuaC35c?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="ratio ratio-21x9">
-                        <iframe src="https://www.youtube.com/embed/gWUMZekq5qI?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="antinal-island-slide" src="https://www.youtube.com/embed/gWUMZekq5qI?enablejsapi=1&mute=1" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span id="prev-slider-btn" class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span id="next-slider-btn" class="visually-hidden">Next</span>
             </button>
         </div>
         
         <!-- This is the container for the buttons-->
-<!--
-        <div class="d-flex flex-lg-row mb-lg-3">
--->
         <div class="d-flex flex-column flex-lg-row">
             <div class="me-lg-3 mb-3">
-                <button type="button" class="btn button-class w-100 h-100">Project Description</button>
+                <a id="slider-projDescription-btn" href="#" class="btn button-class w-100 h-100" tabindex="-1" role="button" aria-disabled="true">Go to Project Description</a>
+
             </div>
             <div class="me-lg-3 mb-3">
-                <button type="button" class="btn button-class w-100 h-100">GitHub</button>
+                <a id="slider-github-btn" href="#" class="btn button-class w-100 h-100" tabindex="-1" role="button" aria-disabled="true">Github</a>
+
             </div>
         </div>
     </section>
@@ -378,6 +377,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
+    <script src="index.js"></script>
 </body>
 </html>
